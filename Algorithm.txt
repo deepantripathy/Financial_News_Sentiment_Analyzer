@@ -1,0 +1,62 @@
+Algorithm for Focused Web Crawler with Data Extraction from Graphs, Charts, and Tables:
+
+Step 1: Seed URL Gathering and Autonomous Crawling
+
+1.1. Gather seed URLs or locally stored web documents:
+
+Read seed URLs from a CSV file or other sources containing URLs related to the topic or subtopics of interest.
+1.2. Implement a creative strategy for autonomous crawling:
+
+Initialize an empty queue to store the URLs to be crawled.
+Add the seed URLs to the queue as starting points for the crawling process.
+While the queue is not empty:
+Dequeue a URL from the queue.
+Send a request to the URL and retrieve the web page content.
+Step 2: Data Extraction from Web Pages (Text, Graphs, Charts, and Tables)
+
+2.1. Preprocess web page content:
+
+Clean the text content of the crawled web pages by removing HTML tags, special characters, and other noise.
+2.2. Extract text-based information from the web page:
+
+Use a library like Beautiful Soup to parse the HTML content and extract relevant text-based information, such as article titles, publication dates, authors, and article bodies.
+2.3. Extract data from graphs and charts:
+
+Implement image processing and graph analysis techniques to identify and extract data from images of graphs and charts. Tools like OpenCV or specialized graph analysis libraries can be helpful in this step.
+2.4. Extract tabular data from tables:
+
+Use tabular data extraction techniques to identify and extract data from HTML tables on the web page. Libraries like Pandas can be useful for processing and extracting tabular data.
+2.5. Apply the document relevance estimation using a large language model:
+
+Use a pre-trained large language model (e.g., BERT) to encode the preprocessed text content into contextualized word embeddings.
+Build co-occurrence graphs or use static and contextualized word embeddings to capture relationships between documents.
+2.6. Estimate document similarity and dependency:
+
+Utilize techniques such as cosine similarity or graph-based algorithms to measure document similarity and relevance.
+Incorporate dependency analysis to identify documents that are highly relevant to the topic or subtopics.
+2.7. Store the extracted information and processed data:
+
+Save the extracted text-based information, data from graphs and charts, and tabular data in appropriate data structures or a database for further analysis.
+Step 3: Model Building and Extension
+
+3.1. Build a model for document relevance ranking:
+
+Create a ranking model that combines document similarity, dependency, and other relevant features to rank the crawled web documents based on their relevance.
+3.2. Continuously extend the model:
+
+As the crawler collects more web documents and data from graphs, charts, and tables, update and retrain the relevance ranking model to incorporate new information and improve performance.
+
+Step 4: Creative Strategy for Crawling and Link Extraction
+
+4.1. Optimize the crawling strategy:
+
+Use heuristics to prioritize crawling of URLs based on factors such as relevance, recency, and popularity of the content.
+4.2. Handle dynamic web content:
+
+Implement techniques like headless browsing with tools like Selenium to handle dynamic web pages generated using JavaScript.
+
+Step 5: Termination Condition
+
+5.1. Set a termination condition for the crawling process:
+
+Define criteria to determine when the crawler should stop, such as reaching a specified number of relevant web documents or when the model reaches a certain level of confidence in its relevance estimation.
